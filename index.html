@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remigiusz Kroszczyński | Renowacja Pokryć Dachowych Bełdów</title>
+<meta name="description" content="Malowanie i renowacja dachów z blachy, usuwanie korozji, papa termozgrzewalna, rynny i obróbki blacharskie w Bełdowie i okolicy. Gwarancja pisemna, 5,0 na Google z 9 opinii.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,800;125,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1c1815',
+          'ink-soft': '#4d463e',
+          paper: '#f2ede2',
+          'paper-raised': '#f8f4ea',
+          charcoal: '#17181b',
+          'charcoal-raised': '#212328',
+          rust: '#a8431f',
+          'rust-dark': '#832f14',
+          'rust-bright': '#dd7038',
+          slate: '#3c4a52',
+          'slate-light': '#8b9ba2',
+        },
+        fontFamily: {
+          display: ['"Archivo"', 'sans-serif'],
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex flex-col leading-none group">
+      <span class="font-display font-black uppercase text-xl md:text-2xl tracking-tight text-paper-raised">
+        Remigiusz <span class="text-rust-bright">Kroszczyński</span>
+      </span>
+      <span class="hidden sm:block text-xs text-slate-light mt-1">Renowacja pokryć dachowych</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#uslugi" class="nav-link">Usługi</a>
+      <a href="#realizacje" class="nav-link">Realizacje</a>
+      <a href="#opinie" class="nav-link">Opinie</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:793393526" class="btn btn-primary rounded-full px-3.5 sm:px-5 py-2.5 text-sm whitespace-nowrap">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span class="hidden sm:inline">793 393 526</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-[100svh] flex items-end overflow-hidden bg-charcoal">
+  <img src="images/4.webp" alt="Malowanie dachu krytego dachówką w trakcie pracy, część połaci już odnowiona" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="grain"></div>
+
+  <div class="relative max-w-7xl mx-auto w-full px-5 md:px-8 pb-24 md:pb-36 pt-32">
+    <div class="max-w-3xl">
+      <h1 class="font-display font-black uppercase text-paper-raised leading-[0.92] tracking-tight text-4xl sm:text-6xl md:text-7xl">
+        Dach odzyska kolor.<br><span class="text-rust-bright">I szczelność.</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-light max-w-xl leading-relaxed">
+        Malujemy i renowujemy pokrycia z blachy: usuwamy korozję ręcznie i metodą hydrodynamiczną, kładziemy papę termozgrzewalną, naprawiamy rynny i obróbki blacharskie. Gwarancja pisemna na każdą robotę.
+      </p>
+
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="tel:793393526" class="btn btn-primary rounded-full px-7 py-4 text-base">
+          <i data-lucide="phone-call" class="w-5 h-5"></i>
+          Zadzwoń: 793 393 526
+        </a>
+        <a href="#realizacje" class="btn btn-outline rounded-full px-7 py-4 text-base">
+          Zobacz realizacje
+          <i data-lucide="arrow-down-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3 text-sm">
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <span class="stars">★★★★★</span> 5,0 <span class="text-slate-light">(9 opinii Google)</span>
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="file-check-2" class="w-4 h-4 text-rust-bright"></i> Gwarancja pisemna
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="map-pin" class="w-4 h-4 text-rust-bright"></i> Bełdów i okolice
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg class="seam-divider absolute -bottom-px left-0 text-paper" viewBox="0 0 1200 56" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,56 L0,22 L1200,44 L1200,56 Z"/>
+  </svg>
+</section>
+
+<!-- ============ PAINT SWATCH SIGNATURE ============ -->
+<section class="py-16 md:py-20 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-10">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-3xl md:text-5xl leading-[0.95] tracking-tight">
+        Kolor dachu <span class="text-rust">do wyboru</span>
+      </h2>
+      <p class="mt-4 text-ink-soft text-lg leading-relaxed">
+        Malujemy blachę farbami odpornymi na UV, mróz i wilgoć. Najczęściej wybierane odcienie u naszych klientów.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-6">
+      <div class="swatch reveal">
+        <div class="swatch-chip rounded-2xl h-24 md:h-28" style="background:#4a2f22;"></div>
+        <div class="mt-3 font-semibold text-sm">Brąz czekoladowy</div>
+        <div class="text-xs text-ink-soft">RAL 8017</div>
+      </div>
+      <div class="swatch reveal">
+        <div class="swatch-chip rounded-2xl h-24 md:h-28" style="background:#383e42;"></div>
+        <div class="mt-3 font-semibold text-sm">Grafitowy antracyt</div>
+        <div class="text-xs text-ink-soft">RAL 7016</div>
+      </div>
+      <div class="swatch reveal">
+        <div class="swatch-chip rounded-2xl h-24 md:h-28" style="background:#7a2818;"></div>
+        <div class="mt-3 font-semibold text-sm">Ceglasta czerwień</div>
+        <div class="text-xs text-ink-soft">RAL 3009</div>
+      </div>
+      <div class="swatch reveal">
+        <div class="swatch-chip rounded-2xl h-24 md:h-28" style="background:#333d29;"></div>
+        <div class="mt-3 font-semibold text-sm">Zieleń leśna</div>
+        <div class="text-xs text-ink-soft">RAL 6020</div>
+      </div>
+      <div class="swatch reveal">
+        <div class="swatch-chip rounded-2xl h-24 md:h-28" style="background:#a5a5a0;"></div>
+        <div class="mt-3 font-semibold text-sm">Aluminium</div>
+        <div class="text-xs text-ink-soft">RAL 9006</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div class="rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.6)]">
+      <img src="images/1.webp" alt="Stare, popękane pokrycie papowe przed renowacją" class="w-full h-full object-cover aspect-[4/3]">
+    </div>
+    <div>
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-3xl md:text-5xl leading-[0.95] tracking-tight text-paper-raised mb-6">
+        Od zniszczenia <span class="text-rust-bright">do gwarancji</span>
+      </h2>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="w-11 h-11 rounded-full bg-rust/15 flex items-center justify-center shrink-0">
+            <i data-lucide="search" class="w-5 h-5 text-rust-bright"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-lg tracking-tight text-paper-raised mb-1">Ocena stanu dachu</h3>
+            <p class="text-slate-light leading-relaxed">Oglądamy pokrycie, sprawdzamy ogniska korozji i mówimy wprost, co da się uratować malowaniem.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-11 h-11 rounded-full bg-rust/15 flex items-center justify-center shrink-0">
+            <i data-lucide="droplets" class="w-5 h-5 text-rust-bright"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-lg tracking-tight text-paper-raised mb-1">Usuwanie korozji</h3>
+            <p class="text-slate-light leading-relaxed">Czyścimy blachę ręcznie lub metodą hydrodynamiczną, usuwając rdzę do czystego metalu przed malowaniem.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-11 h-11 rounded-full bg-rust/15 flex items-center justify-center shrink-0">
+            <i data-lucide="paint-roller" class="w-5 h-5 text-rust-bright"></i>
+          </div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-lg tracking-tight text-paper-raised mb-1">Malowanie z gwarancją</h3>
+            <p class="text-slate-light leading-relaxed">Malujemy farbami do metalu, wystawiamy fakturę i pisemną gwarancję na wykonaną pracę.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight">
+        Dlaczego klienci <span class="text-rust">wracają do nas</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="file-check-2" class="w-6 h-6 text-rust-dark"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Gwarancja na piśmie</h3>
+        <p class="text-ink-soft leading-relaxed">Każda naprawa i renowacja kończy się fakturą i pisemną gwarancją, czarno na białym.</p>
+      </div>
+      <div class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="spray-can" class="w-6 h-6 text-rust-dark"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Dwie metody malowania</h3>
+        <p class="text-ink-soft leading-relaxed">Ręcznie tam, gdzie liczy się precyzja, hydrodynamicznie tam, gdzie liczy się tempo i równa powłoka.</p>
+      </div>
+      <div class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="shield-check" class="w-6 h-6 text-rust-dark"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Ubezpieczenie i uprawnienia</h3>
+        <p class="text-ink-soft leading-relaxed">Posiadamy OC firmy i uprawnienia do pracy na wysokości, więc pracujemy bezpiecznie na każdym dachu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="uslugi" class="relative pt-20 pb-28 md:pt-28 md:pb-40 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-paper-raised">
+          Usługi <span class="text-rust-bright">dekarsko-blacharskie</span>
+        </h2>
+      </div>
+      <a href="uslugi.html" class="btn btn-outline rounded-full px-6 py-3.5 text-sm shrink-0">
+        Wszystkie usługi
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="paint-roller" class="w-7 h-7 text-rust-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Malowanie dachów z blachy</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Malowanie ręczne i hydrodynamiczne każdego rodzaju blachy dachowej.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="droplets" class="w-7 h-7 text-rust-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Usuwanie korozji</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Likwidujemy ogniska rdzy i zabezpieczamy blachę przed dalszym niszczeniem.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="flame" class="w-7 h-7 text-rust-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Papa termozgrzewalna</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Montaż papy na dachach płaskich, szczelne złącza i właściwe spadki.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="cloud-rain" class="w-7 h-7 text-rust-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Naprawa i montaż rynien</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Wymiana, montaż i poprawki systemów rynnowych dopasowane do połaci.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="square-stack" class="w-7 h-7 text-rust-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Obróbki blacharskie na wymiar</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Gięte na miejscu u klienta, dopasowane do każdego trudnego detalu dachu.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="building-2" class="w-7 h-7 text-rust-bright mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-paper-raised mb-2">Rozbiórka i odbudowa kominów</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Demontaż uszkodzonych kominów i odbudowa zgodnie ze sztuką dekarską.</p>
+      </div>
+    </div>
+  </div>
+
+  <svg class="seam-divider absolute -bottom-px left-0 text-paper" viewBox="0 0 1200 56" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,56 L0,44 L1200,22 L1200,56 Z"/>
+  </svg>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="realizacje" class="py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight">
+        Realizacje <span class="text-rust">z Bełdowa i okolic</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[160px] md:auto-rows-[220px]">
+      <button class="gallery-item rounded-xl row-span-2 col-span-1" data-full="images/3.webp" data-caption="Montaż gontu bitumicznego na dachu, widoczne narzędzia i samochód dostawczy">
+        <img src="images/3.webp" alt="Montaż gontu bitumicznego na dachu" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Montaż gontu</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/9.webp" data-caption="Odnowiony dach z blachy trapezowej na budynku gospodarczym">
+        <img src="images/9.webp" alt="Odnowiony dach z blachy trapezowej na budynku gospodarczym" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Blacha trapezowa</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/5.webp" data-caption="Dach kryty blachą na rąbek stojący, w tle komin">
+        <img src="images/5.webp" alt="Dach kryty blachą na rąbek stojący" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Pokrycie z blachy</span>
+      </button>
+      <button class="gallery-item rounded-xl row-span-2" data-full="images/2.webp" data-caption="Montaż okna połaciowego w dachu krytym gontem bitumicznym">
+        <img src="images/2.webp" alt="Montaż okna połaciowego w dachu krytym gontem bitumicznym" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Okno połaciowe</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/7.webp" data-caption="Dach kryty dachówką ceramiczną, widok od strony komina">
+        <img src="images/7.webp" alt="Dach kryty dachówką ceramiczną" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Dachówka ceramiczna</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/8.webp" data-caption="Komin murowany na dachu krytym dachówką">
+        <img src="images/8.webp" alt="Komin murowany na dachu krytym dachówką" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Odbudowa komina</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/11.webp" data-caption="Zrealizowany dach na domu jednorodzinnym">
+        <img src="images/11.webp" alt="Zrealizowany dach na domu jednorodzinnym" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Po renowacji</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/6.webp" data-caption="Malowanie dużego dachu z drabiny, okna połaciowe zabezpieczone taśmą">
+        <img src="images/6.webp" alt="Malowanie dużego dachu z drabiny" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs">Malowanie na wysokości</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="opinie" class="relative py-20 md:py-28 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-8 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-paper-raised">
+          Co mówią <span class="text-rust-bright">klienci</span>
+        </h2>
+      </div>
+      <div class="stat-pill rounded-2xl px-6 py-4 flex items-center gap-4">
+        <span class="font-display font-black text-5xl text-paper-raised leading-none">5,0</span>
+        <div>
+          <div class="stars text-lg leading-none mb-1">★★★★★</div>
+          <div class="text-xs text-slate-light">9 opinii Google</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Korzystam z usług tej firmy od dawna. Jest to firma, którą serdecznie polecam. Prace są wykonywane na czas, bardzo sumiennie i dokładnie."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Barbara Piotrowska · 3 miesiące temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Bardzo wysoka jakość wykonania. Widać ogromną dbałość o szczegóły i zaangażowanie. Wykonawca doradził mi też kilka świetnych rozwiązań."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Alicja Olejnik · 4 miesiące temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Profesjonalna firma godna polecenia. Dach wykonany i pomalowany starannie, terminowo i bez żadnych problemów. Zdecydowanie polecam!"</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Przemysław Pałka · 7 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Polecam firmę, panowie wykonują swoją pracę szybko i z dokładnością. Z efektu jestem bardzo zadowolony, nawet więcej niż oczekiwałem."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Dariusz Kowalski · 6 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Robota wykonana schludnie i zgodnie z ustalonym terminem. Pan Remigiusz to profesjonalista godny polecenia."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Patryk Ratajewski · 3 miesiące temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Praca wykonana dobrze i zgodnie z ustaleniami. Dobry kontakt i terminowa realizacja. Jestem zadowolony, polecam."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Paweł Kaczmarek · 7 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Solidnie i fachowo wykonana praca. Terminowo, bez problemów i z dobrym kontaktem. Polecam."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Mariusz Inter · 7 miesięcy temu</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <div class="stars mb-4">★★★★★</div>
+        <blockquote class="text-paper-raised leading-relaxed text-sm flex-1">"Polecam, pełny profesjonalizm."</blockquote>
+        <figcaption class="mt-5 text-xs text-slate-light">Ola · 4 miesiące temu</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="kontakt" class="py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight mb-6">
+        Umówmy <span class="text-rust">oględziny</span>
+      </h2>
+      <p class="text-ink-soft text-lg leading-relaxed max-w-lg mb-10">
+        Zadzwoń i opowiedz, co dzieje się z dachem. Obejrzymy pokrycie i powiemy uczciwie, co da się uratować malowaniem.
+      </p>
+
+      <div class="space-y-5">
+        <a href="tel:793393526" class="flex items-center gap-4 surface-card rounded-2xl p-5 group">
+          <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center shrink-0">
+            <i data-lucide="phone" class="w-5 h-5 text-rust-dark"></i>
+          </div>
+          <div>
+            <div class="text-xs text-ink-soft mb-1">Telefon</div>
+            <div class="font-display font-bold text-2xl tracking-tight">793 393 526</div>
+          </div>
+        </a>
+        <a href="mailto:remigiusz166@wp.pl" class="flex items-center gap-4 surface-card rounded-2xl p-5 group">
+          <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center shrink-0">
+            <i data-lucide="mail" class="w-5 h-5 text-rust-dark"></i>
+          </div>
+          <div>
+            <div class="text-xs text-ink-soft mb-1">E-mail</div>
+            <div class="font-display font-bold text-xl tracking-tight break-all">remigiusz166@wp.pl</div>
+          </div>
+        </a>
+        <div class="flex items-center gap-4 surface-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5 text-rust-dark"></i>
+          </div>
+          <div>
+            <div class="text-xs text-ink-soft mb-1">Adres</div>
+            <div class="font-display font-bold text-xl tracking-tight">Bełdów 11R, 95-070 Bełdów</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 surface-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5 text-rust-dark"></i>
+          </div>
+          <div>
+            <div class="text-xs text-ink-soft mb-1">Godziny</div>
+            <div class="font-display font-bold text-xl tracking-tight">Pon-Pt 7:00-20:00, Sob 9:00-13:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(28,24,21,0.06),0_8px_20px_-8px_rgba(28,24,21,0.18)] min-h-[420px] border border-black/10">
+      <iframe
+        src="https://www.google.com/maps?q=Be%C5%82d%C3%B3w+11R%2C+95-070+Be%C5%82d%C3%B3w&output=embed"
+        class="w-full h-full min-h-[420px]"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa dojazdu do Remigiusz Kroszczyński, Bełdów">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <span class="font-display font-black uppercase text-xl tracking-tight text-paper-raised leading-none block mb-4">
+          Remigiusz <span class="text-rust-bright">Kroszczyński</span>
+        </span>
+        <p class="text-slate-light text-sm leading-relaxed max-w-xs">Renowacja pokryć dachowych. Malowanie blachy, papa termozgrzewalna, rynny i obróbki blacharskie.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-paper-raised">
+          <li><a href="tel:793393526" class="nav-link">793 393 526</a></li>
+          <li><a href="mailto:remigiusz166@wp.pl" class="nav-link">remigiusz166@wp.pl</a></li>
+          <li class="text-slate-light">Bełdów 11R, 95-070 Bełdów</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-light">
+      <span>© 2026 Remigiusz Kroszczyński. Wszelkie prawa zastrzeżone.</span>
+      <span>NIP 7292413740</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-paper-raised hover:text-rust-bright transition-colors" aria-label="Zamknij podgląd">
+    <i data-lucide="x" class="w-8 h-8"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  lucide.createIcons();
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 12);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      lightboxImg.src = item.dataset.full;
+      lightboxImg.alt = item.dataset.caption || '';
+      lightbox.classList.add('is-open');
+    });
+  });
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>

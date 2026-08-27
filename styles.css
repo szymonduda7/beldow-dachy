@@ -1,0 +1,320 @@
+/* ==========================================================================
+   Remigiusz Kroszczyński, Renowacja Pokryć Dachowych
+   Shared design tokens & components
+   ========================================================================== */
+
+:root {
+  --ink: #1c1815;
+  --ink-soft: #4d463e;
+  --paper: #f2ede2;
+  --paper-raised: #f8f4ea;
+  --charcoal: #17181b;
+  --charcoal-raised: #212328;
+  --charcoal-float: #2a2c31;
+  --rust: #a8431f;
+  --rust-dark: #832f14;
+  --rust-bright: #dd7038;
+  --slate: #3c4a52;
+  --slate-light: #8b9ba2;
+  --line-dark: rgba(139, 155, 162, 0.18);
+  --line-light: rgba(28, 24, 21, 0.12);
+
+  --shadow-card:
+    0 1px 2px rgba(28, 24, 21, 0.06),
+    0 8px 20px -8px rgba(28, 24, 21, 0.18),
+    0 20px 40px -24px rgba(168, 67, 31, 0.14);
+  --shadow-float:
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 16px 32px -12px rgba(0, 0, 0, 0.45),
+    0 30px 60px -30px rgba(168, 67, 31, 0.28);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Archivo", "Arial Narrow", sans-serif;
+}
+
+/* Focus states ------------------------------------------------------------ */
+a, button, input, textarea, summary {
+  outline-offset: 3px;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--rust-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Grain texture overlay ---------------------------------------------------- */
+.grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Header -------------------------------------------------------------------- */
+.site-header {
+  background: rgba(23, 24, 27, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-dark);
+  transition: box-shadow 0.3s var(--ease-spring), border-color 0.3s var(--ease-spring);
+}
+.site-header.is-scrolled {
+  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.7);
+  border-color: rgba(139, 155, 162, 0.3);
+}
+
+.nav-link {
+  position: relative;
+  color: var(--slate-light);
+  transition: color 0.25s var(--ease-spring);
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -4px;
+  height: 2px;
+  background: var(--rust-bright);
+  transition: right 0.3s var(--ease-spring);
+}
+.nav-link:hover {
+  color: #f8f4ea;
+}
+.nav-link:hover::after {
+  right: 0;
+}
+
+/* Buttons -------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s var(--ease-spring), background-color 0.25s var(--ease-spring), color 0.25s var(--ease-spring);
+}
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+.btn-primary {
+  background: var(--rust);
+  color: #fdf6ee;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset, 0 10px 24px -10px rgba(168, 67, 31, 0.6);
+}
+.btn-primary:hover {
+  background: var(--rust-bright);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.16) inset, 0 14px 30px -10px rgba(168, 67, 31, 0.75);
+  transform: translateY(-1px);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--paper-raised);
+  border: 1.5px solid var(--line-dark);
+}
+.btn-outline:hover {
+  border-color: var(--slate-light);
+  background: rgba(139, 155, 162, 0.08);
+  transform: translateY(-1px);
+}
+.btn-outline-dark {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--line-light);
+}
+.btn-outline-dark:hover {
+  border-color: var(--rust);
+  color: var(--rust-dark);
+  transform: translateY(-1px);
+}
+
+/* Diagonal seam divider (repainted-strip motif) ----------------------------- */
+.seam-divider {
+  display: block;
+  width: 100%;
+  height: 56px;
+}
+
+/* Cards ------------------------------------------------------------------- */
+.surface-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line-light);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease-spring), border-color 0.35s var(--ease-spring);
+}
+.surface-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-float);
+  border-color: rgba(168, 67, 31, 0.35);
+}
+
+.dark-card {
+  background: var(--charcoal-raised);
+  border: 1px solid var(--line-dark);
+  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease-spring), border-color 0.35s var(--ease-spring);
+}
+.dark-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(221, 112, 56, 0.4);
+  box-shadow: var(--shadow-float);
+}
+
+.stat-pill {
+  background: rgba(139, 155, 162, 0.08);
+  border: 1px solid var(--line-dark);
+  backdrop-filter: blur(6px);
+}
+
+/* Paint swatch (signature element) ------------------------------------------ */
+.swatch {
+  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease-spring);
+}
+.swatch:hover {
+  transform: translateY(-6px);
+}
+.swatch-chip {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.18) inset, var(--shadow-card);
+  transition: box-shadow 0.35s var(--ease-spring), transform 0.35s var(--ease-spring);
+}
+.swatch:hover .swatch-chip {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.22) inset, var(--shadow-float);
+}
+
+/* Gallery ------------------------------------------------------------------- */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.gallery-item img {
+  transition: transform 0.6s var(--ease-spring), filter 0.6s var(--ease-spring);
+  filter: saturate(0.94) contrast(1.02);
+}
+.gallery-item:hover img {
+  transform: scale(1.06);
+  filter: saturate(1.05) contrast(1.04);
+}
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(23, 24, 27, 0.75), rgba(23, 24, 27, 0) 55%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-spring);
+}
+.gallery-item:hover::after {
+  opacity: 1;
+}
+.gallery-caption {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s var(--ease-spring), transform 0.35s var(--ease-spring);
+}
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Lightbox -------------------------------------------------------------------- */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(15, 15, 16, 0.94);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: fade-in 0.25s var(--ease-spring);
+}
+#lightbox.is-open {
+  display: flex;
+}
+#lightbox img {
+  max-width: min(92vw, 1100px);
+  max-height: 86vh;
+  box-shadow: var(--shadow-float);
+  border-radius: 4px;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Hero gradient -------------------------------------------------------------- */
+.hero-scrim {
+  background:
+    linear-gradient(90deg, rgba(15, 15, 16, 0.92) 0%, rgba(15, 15, 16, 0.72) 42%, rgba(15, 15, 16, 0.32) 75%, rgba(15, 15, 16, 0.55) 100%),
+    linear-gradient(0deg, rgba(15, 15, 16, 0.9) 0%, rgba(15, 15, 16, 0.1) 30%, rgba(15, 15, 16, 0.05) 60%, rgba(15, 15, 16, 0.65) 100%);
+}
+
+/* Radial texture on dark sections --------------------------------------------- */
+.dark-radials {
+  background-image:
+    radial-gradient(ellipse 60% 50% at 15% 0%, rgba(168, 67, 31, 0.16), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(60, 74, 82, 0.22), transparent 65%);
+}
+
+/* Reveal on scroll -------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s var(--ease-spring), transform 0.7s var(--ease-spring);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Star rating ------------------------------------------------------------------ */
+.stars {
+  color: var(--rust-bright);
+  letter-spacing: 0.1em;
+}
+
+/* Utility: heading rule bar ------------------------------------------------------ */
+.rule-bar {
+  width: 3rem;
+  height: 4px;
+  background: var(--rust);
+  border-radius: 2px;
+}
+
+/* Process chain arrow --------------------------------------------------------- */
+.process-arrow {
+  color: var(--line-light);
+}

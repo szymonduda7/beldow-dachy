@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | Remigiusz Kroszczyński, Renowacja Pokryć Dachowych</title>
+<meta name="description" content="Pełna oferta: malowanie dachów z blachy, usuwanie korozji, papa termozgrzewalna, rynny, obróbki blacharskie, blacha trapezowa i odbudowa kominów. Bełdów i okolice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,800;125,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1c1815',
+          'ink-soft': '#4d463e',
+          paper: '#f2ede2',
+          'paper-raised': '#f8f4ea',
+          charcoal: '#17181b',
+          'charcoal-raised': '#212328',
+          rust: '#a8431f',
+          'rust-dark': '#832f14',
+          'rust-bright': '#dd7038',
+          slate: '#3c4a52',
+          'slate-light': '#8b9ba2',
+        },
+        fontFamily: {
+          display: ['"Archivo"', 'sans-serif'],
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50 is-scrolled">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex flex-col leading-none group">
+      <span class="font-display font-black uppercase text-xl md:text-2xl tracking-tight text-paper-raised">
+        Remigiusz <span class="text-rust-bright">Kroszczyński</span>
+      </span>
+      <span class="hidden sm:block text-xs text-slate-light mt-1">Renowacja pokryć dachowych</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="uslugi.html" class="nav-link text-paper-raised">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link">Realizacje</a>
+      <a href="index.html#opinie" class="nav-link">Opinie</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:793393526" class="btn btn-primary rounded-full px-3.5 sm:px-5 py-2.5 text-sm whitespace-nowrap">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      <span class="hidden sm:inline">793 393 526</span>
+    </a>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-charcoal dark-radials overflow-hidden pt-32 pb-28 md:pt-40 md:pb-36 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-slate-light hover:text-rust-bright transition-colors text-sm mb-8">
+      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+      Strona główna
+    </a>
+    <div class="rule-bar mb-5"></div>
+    <h1 class="font-display font-black uppercase text-paper-raised leading-[0.92] tracking-tight text-5xl sm:text-7xl md:text-8xl max-w-4xl">
+      Usługi <span class="text-rust-bright">dekarskie</span>
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-slate-light max-w-2xl leading-relaxed">
+      Malowanie i renowacja dachów z blachy, naprawy, rynny i obróbki blacharskie. Wszystko wykonuje ta sama para rąk, od pierwszych oględzin po pisemną gwarancję.
+    </p>
+  </div>
+  <svg class="seam-divider absolute -bottom-px left-0 text-paper" viewBox="0 0 1200 56" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,56 L0,22 L1200,44 L1200,56 Z"/>
+  </svg>
+</section>
+
+<!-- ============ SERVICE CARDS ============ -->
+<section class="py-20 md:py-24 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="paint-roller" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Malowanie dachów z blachy</h2>
+        <p class="text-ink-soft leading-relaxed">Malujemy każdy rodzaj blachy dachowej ręcznie i metodą hydrodynamiczną, farbami odpornymi na słońce, mróz i wilgoć.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="droplets" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Usuwanie ognisk korozji</h2>
+        <p class="text-ink-soft leading-relaxed">Czyścimy blachę do czystego metalu i zabezpieczamy ją przed dalszym rdzewieniem, zanim położymy farbę.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="flame" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Papa termozgrzewalna</h2>
+        <p class="text-ink-soft leading-relaxed">Montujemy papę termozgrzewalną na dachach płaskich, ze szczelnymi złączami i prawidłowymi spadkami.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="cloud-rain" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Naprawa i wymiana rynien</h2>
+        <p class="text-ink-soft leading-relaxed">Usuwamy nieszczelności, prostujemy wgniecenia i montujemy nowe systemy rynnowe dopasowane do połaci.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="square-stack" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Obróbki blacharskie na wymiar</h2>
+        <p class="text-ink-soft leading-relaxed">Gięte na miejscu u klienta, dopasowane do komina, okna połaciowego czy pasa nadrynnowego.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="layers" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Blacha trapezowa modułowa</h2>
+        <p class="text-ink-soft leading-relaxed">Montujemy poszycie z blachy trapezowej, zarówno na nowych, jak i remontowanych dachach.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="building-2" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Rozbiórka i odbudowa kominów</h2>
+        <p class="text-ink-soft leading-relaxed">Demontujemy uszkodzone kominy i odbudowujemy je od podstaw, zgodnie ze sztuką dekarską.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="wrench" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Naprawa istniejących zabudowań</h2>
+        <p class="text-ink-soft leading-relaxed">Poprawiamy i przebudowujemy wcześniej wykonane elementy dachu, które przestały działać jak trzeba.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="file-check-2" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Faktura i gwarancja pisemna</h2>
+        <p class="text-ink-soft leading-relaxed">Każde zlecenie kończy się fakturą za wykonaną pracę i pisemną gwarancją, czarno na białym.</p>
+      </article>
+
+      <article class="surface-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-rust/10 flex items-center justify-center mb-6">
+          <i data-lucide="shield-check" class="w-7 h-7 text-rust-dark"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight mb-3">Praca na wysokości z ubezpieczeniem</h2>
+        <p class="text-ink-soft leading-relaxed">Posiadamy OC firmy i uprawnienia do pracy na wysokości, na każdym, także stromym dachu.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative py-20 px-5 md:px-8 bg-charcoal dark-radials overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-3xl mx-auto text-center">
+    <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight text-paper-raised mb-5">
+      Nie widzisz swojej usługi?
+    </h2>
+    <p class="text-slate-light text-lg leading-relaxed mb-9 max-w-xl mx-auto">
+      Zadzwoń i opisz problem z dachem. Prawie każde zlecenie da się dopasować, na pewno pomożemy.
+    </p>
+    <a href="tel:793393526" class="btn btn-primary rounded-full px-8 py-4 text-base inline-flex">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      Zadzwoń: 793 393 526
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <span class="font-display font-black uppercase text-xl tracking-tight text-paper-raised leading-none block mb-4">
+          Remigiusz <span class="text-rust-bright">Kroszczyński</span>
+        </span>
+        <p class="text-slate-light text-sm leading-relaxed max-w-xs">Renowacja pokryć dachowych. Malowanie blachy, papa termozgrzewalna, rynny i obróbki blacharskie.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-paper-raised">
+          <li><a href="tel:793393526" class="nav-link">793 393 526</a></li>
+          <li><a href="mailto:remigiusz166@wp.pl" class="nav-link">remigiusz166@wp.pl</a></li>
+          <li class="text-slate-light">Bełdów 11R, 95-070 Bełdów</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-light">
+      <span>© 2026 Remigiusz Kroszczyński. Wszelkie prawa zastrzeżone.</span>
+      <span>NIP 7292413740</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
